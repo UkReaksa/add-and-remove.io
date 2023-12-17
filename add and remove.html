@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+.all{
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+
+}
+.all{
+  margin: auto;
+  justify-content: center;
+
+}
+button{
+margin-top: 50%;
+}
+.city {
+    background-color: tomato;
+
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    }
+</style>
+<body>
+  
+  <div id="myDiv"></div>
+  <button onclick="add()">click</button>
+  <button onclick="remove()">click</button>
+</body>
+<script>
+function add(){
+  var element = document.getElementById("myDiv");
+  element.classList.add("all");
+}
+function remove(){
+  var element = document.getElementById("myDiv");
+  element.classList.remove("all");
+}
+</script>
+</html>
